@@ -5,31 +5,31 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "@remix-run/react";
+} from '@remix-run/react';
 
-import MainHeader from "~/components/navigation/MainHeader";
-import sharedStyles from "~/styles/shared.css";
+import MainHeader from '~/components/navigation/MainHeader';
+import sharedStyles from '~/styles/shared.css';
 
 export const meta = () => ({
-  charset: "utf-8",
-  title: "Remix - Expenses App",
-  viewport: "width=device-width,initial-scale=1",
+  charset: 'utf-8',
+  title: 'Remix - Expenses App',
+  viewport: 'width=device-width,initial-scale=1',
 });
 
 export default function App() {
   return (
-    <html lang="en">
+    <html lang='en'>
       <head>
         <Meta />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
+          rel='preconnect'
+          href='https://fonts.gstatic.com'
+          crossOrigin='true'
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
-          rel="stylesheet"
+          href='https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap'
+          rel='stylesheet'
         />
         <Links />
       </head>
@@ -45,5 +45,5 @@ export default function App() {
 }
 
 export function links() {
-  return [{ rel: "stylesheet", href: sharedStyles }];
+  return [{ rel: 'stylesheet', href: sharedStyles }];
 }

@@ -1,24 +1,24 @@
 // /expenses/analysis
 
-import expensesStyles from "~/styles/expenses.css";
+import expensesStyles from '~/styles/expenses.css';
 
 const DUMMY_EXPENSES = [
   {
-    id: "e1",
-    title: "First Expense",
+    id: 'e1',
+    title: 'First Expense',
     amount: 12.99,
     date: new Date().toISOString(),
   },
   {
-    id: "e2",
-    title: "Second Expense",
+    id: 'e2',
+    title: 'Second Expense',
     amount: 16.99,
     date: new Date().toISOString(),
   },
 ];
 
-import ExpenseStatistics from "~/components/expenses/ExpenseStatistics";
-import Chart from "~/components/expenses/Chart";
+import ExpenseStatistics from '~/components/expenses/ExpenseStatistics';
+import Chart from '~/components/expenses/Chart';
 
 export default function ExpensesAnalysisPage() {
   return (
@@ -30,5 +30,5 @@ export default function ExpensesAnalysisPage() {
 }
 
 export function links() {
-  return [{ rel: "stylesheet", href: expensesStyles }];
+  return [{ rel: 'stylesheet', href: expensesStyles }];
 }
