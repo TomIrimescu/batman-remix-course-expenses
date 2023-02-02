@@ -8,6 +8,7 @@ export default function AddExpensesPage() {
   const navigate = useNavigate();
 
   function closeHandler() {
+    // navigate programmatically
     navigate('..');
   }
 
