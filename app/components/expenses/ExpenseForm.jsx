@@ -4,9 +4,25 @@ function ExpenseForm() {
   const today = new Date().toISOString().slice(0, 10); // yields something like 2023-09-10
 
   const validationErrors = useActionData();
+  // const submit = useSubmit();
+
+  // function submitHandler(event) {
+  //   event.preventDefault();
+  //   // ...perform your own validation
+  //   // ...checking if 'title', 'amount', 'date' are valid on the client side
+  //   submit(event.target, {
+  //     // action: '/expense/add', // action not needed if on same page as route
+  //     method: 'post',
+  //   });
+  // }
 
   return (
-    <form method='post' className='form' id='expense-form'>
+    <form
+      method='post'
+      className='form'
+      id='expense-form'
+      // onSubmit={submitHandler}
+    >
       <p>
         <label htmlFor='title'>Expense Title</label>
         <input type='text' id='title' name='title' required maxLength={30} />
